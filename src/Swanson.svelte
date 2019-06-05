@@ -3,10 +3,8 @@
     const apiEndpoint = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
 
 
-    const fetchQuote = async () => {
-        const response = await fetch(apiEndpoint);
-        const json = await response.json();
-        return json;
+    const fetchQuote = () => {
+        return fetch(apiEndpoint).then(r => r.json());
     };
 
 </script>
