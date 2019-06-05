@@ -1,6 +1,6 @@
 <script>
     import Container from './Border.svelte';
-    const apiEndpoint = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
+    const apiEndpoint = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
 
 
     const fetchQuote = () => {
