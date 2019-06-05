@@ -28,6 +28,7 @@
 
     .seconds {
         font-size: 30px;
+        color: var(--content-highlight);
     }
 </style>
 
