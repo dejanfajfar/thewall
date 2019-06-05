@@ -19,7 +19,7 @@
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",
-    "start:heroku": "sirv public -p $PORT",
+    "start:heroku": "sirv public --port $PORT",
     "start:dev": "sirv public --dev"
   }
 }
