@@ -1,68 +1,23 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
+![theWall](misc/title.jpeg)
 
----
+# theWALL
 
-# svelte app
+A simple [svelte](https://svelte.dev/) learning experience.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+## Motivation
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+The best way to learn a new thing is to work with sed thing. So here we are. A little svelte application to take the thing for a test ride
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+## Goal 
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+Because of the dropping prises of TVs and raspberries there are many monitors/TVs that have nothing to display. For those I have created a little **joke** application to display random humorous facts from the interned and give the monitors a purpose.
 
+## Infrastructure
 
-## Get started
+KISS
 
-Install the dependencies...
+### External resources
 
-```bash
-cd svelte-app
-npm install
-```
-
-...then start [Rollup](https://rollupjs.org):
-
-```bash
-npm run dev
-```
-
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
-
-
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-now
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public
-```
+* Ron Swanson quotes service: http://ron-swanson-quotes.herokuapp.com/v2/quotes
+* Urban dictionary word of the day: http://urban-word-of-the-day.herokuapp.com/
+* Youtube: https:/youtube.com

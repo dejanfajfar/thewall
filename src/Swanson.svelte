@@ -1,5 +1,5 @@
 <script>
-    import Container from './containers/wallthing.svelte';
+    import Container from './Border.svelte';
     const apiEndpoint = 'http://ron-swanson-quotes.herokuapp.com/v2/quotes';
 
 
@@ -16,11 +16,19 @@
         width: 100px;
         height: 100px;
         border-radius: 20px;
-        display: inline-block;
+        display: table-cell;
+        margin-right: 10px;
     }
 
     p {
-        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        display: table-cell;
+        margin: 0;
+        vertical-align: middle
+    }
+
+    #swanson {
+        display: table;
     }
 </style>
 

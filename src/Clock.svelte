@@ -1,5 +1,5 @@
 <script>
-    import Container from './containers/wallthing.svelte';
+    import Container from './Border.svelte';
     import { onDestroy } from 'svelte';
 
     let hours = 0;
@@ -16,6 +16,22 @@
     onDestroy(() => clearInterval(interval));
 </script>
 
+<style>
+    p {
+        font-family: 'Russo One', sans-serif;
+        font-size: 50px;
+        font-weight: 300;
+        margin: 0;
+        text-align: center;
+    }
+
+    .seconds {
+        font-size: 30px;
+    }
+</style>
+
 <Container text='⏲️Clock'>
-    <p>{hours} : {minutes} : {seconds}</p>
+    <p>
+    <span>{hours}:{minutes}</span><span class="seconds">{seconds}</span>
+    </p>
 </Container>
