@@ -1,6 +1,7 @@
 <script>
     import Container from './Border.svelte';
     import { onDestroy } from 'svelte';
+    import Numeral from 'numeral';
 
     let hours = 0;
     let minutes = 0;
@@ -8,9 +9,9 @@
 
     const interval = setInterval(() => {
         let date = new Date();
-        hours = date.getHours();
-        minutes = date.getMinutes();
-        seconds = date.getSeconds();
+        hours = Numeral(date.getHours()).format('00');
+        minutes = Numeral(date.getMinutes()).format('00');
+        seconds = Numeral(date.getSeconds()).format('00');
     });
 
     onDestroy(() => clearInterval(interval));
