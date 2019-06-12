@@ -2,6 +2,7 @@
 	import Swanson from './Swanson.svelte';
 	import Clock from './Clock.svelte';
 	import Video from './Youtube.svelte';
+	import News from './NewsList.svelte';
 </script>
 
 <style>
@@ -11,13 +12,10 @@
 </style>
 
 <div class="row">
-	<div style="flex: 1">
-	<Swanson/>
-	</div>
-	<div style="width: 400px">
-	<Clock/>
-	</div>
+	<Swanson style="flex: 1"/>
+	<Clock style="width: 400px"/>
 </div>
 <div class="row">
+	<News sources="the-verge,wired,techcrunch", apiKey="e289cecc7b7040c9a58654b23a74c1ba"></News>
 	<Video></Video>
 </div>
