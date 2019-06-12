@@ -12,7 +12,7 @@
         hours = Numeral(date.getHours()).format('00');
         minutes = Numeral(date.getMinutes()).format('00');
         seconds = Numeral(date.getSeconds()).format('00');
-    });
+    }, 1000);
 
     onDestroy(() => clearInterval(interval));
 </script>

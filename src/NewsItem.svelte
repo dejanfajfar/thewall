@@ -1,4 +1,6 @@
 <script>
+    import { fade } from 'svelte/transition';
+
     export let article = {
         author: "Unknown Author",
         title: "unknown title",
@@ -51,10 +53,10 @@
 
 </style>
 
-<article class="article">
+<article in:fade class="article">
     <img class="articleimg" src="{article.imageUrl}" alt={article.title}>
     <div class="author">
-        <p>{article.author}</p>
+        <p>{article.source}</p>
     </div>
     <div class="content">
         <h1>{article.title}</h1>

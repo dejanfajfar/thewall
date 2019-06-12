@@ -1,5 +1,6 @@
 <script>
     import Container from './Border.svelte';
+    import { onMount } from 'svelte';
     const apiEndpoint = 'https://ron-swanson-quotes.herokuapp.com/v2/quotes';
 
 
@@ -7,6 +8,13 @@
         return fetch(apiEndpoint).then(r => r.json());
     };
 
+    onMount(() => {
+        const timer = setInterval(() => {
+            fetchQuote = fetchQuote;
+        }, 5 * 60 * 1000);
+
+        return () => clearInterval(timer);
+    });
 </script>
 
 <style>
@@ -36,7 +44,7 @@
         {#await fetchQuote()}
         <p>Loading quotes...</p>
         {:then data}
-        <p>{data}</p>
+        <p transform:fade >{data}</p>
         {/await}
     </div>
 </Container>

@@ -1,11 +1,13 @@
 <script>
+    import { onMount } from 'svelte';
     import Border from './Border.svelte';
     import NewsItem from './NewsItem.svelte';
+    import { fade } from 'svelte/transition';
 
     export let sources;
     export let apiKey;
 
-    const apiUrl = `https://newsapi.org/v2/top-headlines?sources=${sources}&pageSize=10&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?sources=${sources}&pageSize=12&apiKey=${apiKey}`;
 
     const fetchNewsItems = () => {
         return fetch(apiUrl)
@@ -28,6 +30,14 @@
                 });
             })
     };
+
+    onMount(() => {
+        const timer = setInterval(() => {
+            fetchNewsItems = fetchNewsItems;
+        }, 15 * 60 * 1000)
+
+        return () => clearInterval(timer);
+    });
 </script>
 
 <style>
@@ -45,7 +55,7 @@
     {#await fetchNewsItems()}
         <p>LOADING....</p>
     {:then articles}
-        {#each articles as article}
+        {#each articles as article (article.title)}
             <NewsItem article={article}></NewsItem>
         {/each}
     {:catch error}
