@@ -24,6 +24,9 @@ A simple website with no server site component to it.
 
 ## Docker
 
+[![](https://images.microbadger.com/badges/image/dejanfajfar/thewall.svg)](https://microbadger.com/images/dejanfajfar/thewall "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/dejanfajfar/thewall.svg)](https://microbadger.com/images/dejanfajfar/thewall "Get your own version badge on microbadger.com")
+
 Just for the sake of it this "wall" is available as a docker image on docker hub
 
 [dejanfajfar/thewall](https://hub.docker.com/r/dejanfajfar/thewall)
@@ -37,6 +40,8 @@ docker run -p 8080:80 dejanfajfar/thewall
 Now it is available at http://localhost:8080
 
 ## Herokuapp
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 If you do not want to pull any images and just want to run it somewhere. You can! 
 
