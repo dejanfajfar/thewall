@@ -18,6 +18,7 @@
   },
   "scripts": {
     "build": "rollup -c",
+    "build:docker": "docker build -t thewall:latest .",
     "autobuild": "rollup -c -w",
     "dev": "run-p start:dev autobuild",
     "start": "sirv public",

@@ -19,5 +19,4 @@ KISS
 ### External resources
 
 * Ron Swanson quotes service: http://ron-swanson-quotes.herokuapp.com/v2/quotes
-* Urban dictionary word of the day: http://urban-word-of-the-day.herokuapp.com/
 * Youtube: https:/youtube.com
