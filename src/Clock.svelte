@@ -3,6 +3,8 @@
     import { onDestroy } from 'svelte';
     import Numeral from 'numeral';
 
+    export let style = "";
+
     let hours = 0;
     let minutes = 0;
     let seconds = 0;
@@ -32,7 +34,7 @@
     }
 </style>
 
-<Container text='⏲️Clock'>
+<Container text='⏲️Clock' style="{style}">
     <p>
     <span>{hours}:{minutes}</span><span class="seconds">{seconds}</span>
     </p>

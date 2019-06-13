@@ -1,5 +1,6 @@
 <script>
     export let text;
+    export let style = "";
 </script>
 
 <style>
@@ -23,7 +24,7 @@
     }
 </style>
 
-<div class="container">
+<div class="container" style="{style}">
     <div class="header">
         <h2>{text}</h2>
     </div>
