@@ -1,7 +1,0 @@
-{
-    "name": "theWall",
-    "description": "A little svelter app to keep your HD display bussy",
-    "repository": "https://github.com/dejanfajfar/thewall.git",
-    "logo": "https://github.com/dejanfajfar/thewall/blob/master/misc/title.jpeg?raw=true",
-    "keywords": ["svelte", "dashboard", "static"]
-  }
